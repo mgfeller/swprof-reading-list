@@ -55,6 +55,14 @@
                         <li>If you don't have the C, don't bother with the AMS.</li>
                         <li>All about feedback loops! CAMS.</li>
                         <li>Conway's Law</li>
+                        <li>Somebody said at DevOpsCon 2015 in M: culture is not important, but cultural alignment is
+                            critical. Aesthetic alignment might be a better expression. Alignment can make organizations
+                            / teams rigid.
+                        </li>
+                        <li>Cybernetics is a transdisciplinary[1] approach for exploring regulatory systems, their
+                            structures, constraints, and possibilities. In the 21st century, the term is often used in a
+                            rather loose way to imply "control of any system using technology."
+                        </li>
                     </ul>
                 </aside>
             </section>
@@ -63,13 +71,68 @@
             <section>
                 <img alt="The Phoenix Project. A Novel About IT, DevOps, and Helping Your Business Win"
                      src="the-phoenix-project.jpg" width="334" height="499"/>
+                <aside class="notes">
+                    <ul>
+                        <li>
+                            Learn how to recognize problems that happen in IT organizations; how these problems
+                            jeopardize nearly every commitment the business makes in Development, IT Operations and
+                            Information Security; and how DevOps techniques can fix the problem to help the business
+                            win.
+                        </li>
+                        <li>Brent: bottleneck. constraint.</li>
+                        <li>Erik: the teacher.</li>
+                        <li>Bill: the I-character, the student</li>
+                    </ul>
+                </aside>
             </section>
             <section>
                 <ul>
                     <li>Analogy to manufacturing</li>
-                    <li>Lean Production</li>
-                    <li>Handling of constraints</li>
+                    <li>Lean production</li>
+                    <li>Constraints handling</li>
+                    <li>Technical debt</li>
+                    <li>Entire systems view</li>
+                    <li>The Three Ways</li>
                 </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>Book: The Goal. Eliyahu M. Goldratt</li>
+                                <li>Step 1: identify the constraint</li>
+                                <li>Step 2: exploit the constraint. make sure it is not allowed to waste any time, it
+                                    has never
+                                    to wait, always works on highest priority commitment
+                                </li>
+                                <li>Step 3: subordinate the constraint. Theory of constraints, implemented
+                                    Drum-Buffer-Rope.
+                                    Release by the rate it can be consumed.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Kanban WIP</li>
+                        <li>Throughput through the entire system</li>
+                        <li>Preventive Maintenance</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <!-- Phoenix. p356-->
+                <h2>The Three Ways</h2>
+                <ul>
+                    <li>First way: left-to-right, production</li>
+                    <li>Second way: right-to-left, feedback</li>
+                    <li>Third way: culture, fostering continuous experimentation and taking risks, and that repetition
+                        and practice is the prerequisite to mastery
+                    </li>
+                </ul>
+                <aside>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </aside>
             </section>
             <section>
                 <img src="managers-guide-to-cd-319x500.jpg" width="319" height="500"/>
@@ -79,8 +142,18 @@
             <section>
                 <h2>Kanban</h2>
                 <ul>
-                    <li>Work in progress</li>
+                    <li>Value Stream</li>
+                    <li>Control work in progress</li>
                 </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Avoid unplanned work.</li>
+                        <li>Unplanned work is not free, it comes at the expense of planned work.</li>
+                        <li>Left unchecked, technical dept will ensure that the only work that gets done is unplanned
+                            work.
+                        </li>
+                    </ul>
+                </aside>
             </section>
             <section>
                 <img alt="Personal Kanban. Mapping Work | Navigating Life" src="personal-kanban.jpg"/>
@@ -120,31 +193,31 @@
                     <li></li>
                 </ul>
             </section>
+            <section>
+                <blockquote>"It's always the system's fault, never a person 's. No blaming culture."</blockquote>
+            </section>
         </section>
         <section>
             <section>
-                <h2>Continuous Delivery</h2>
+                <h2>Continuous ...</h2>
                 <ul>
-                    <li class="fragment"><strong>Continuous integration</strong>
+                    <li class="fragment"><strong>Integration</strong>
                         <div>
-                            <label class="fragment">Push/clone,</label>
-                            <label class="fragment">Static analysis,</label>
-                            <label class="fragment">Pre-deployment testing,</label>
-                            <label class="fragment">Packaging/deployment,</label>
-                            <label class="fragment">Post-deployment testing</label>
+                            <label class="fragment">Every commit is built, tested, packaged and deployed to
+                                test.</label>
                         </div>
                     </li>
-                    <li class="fragment"><strong>Continuous delivery</strong>
+                    <li class="fragment"><strong>Delivery</strong>
                         <div>
-                            <label class="fragment">every commit <label class="fragment grow highlight-current-green">can
-                                be</label> deployed to production</label>
+                            <label class="fragment">Every commit <label class="fragment grow highlight-current-green">can
+                                be</label> deployed to production.</label>
                         </div>
                     </li>
-                    <li class="fragment"><strong>Continuous deployment</strong>
+                    <li class="fragment"><strong>Deployment</strong>
                         <div>
-                            <label class="fragment">every commit <label
+                            <label class="fragment">Every commit <label
                                     class="fragment grow highlight-current-green">is</label> deployed to
-                                production</label>
+                                production.</label>
                         </div>
                     </li>
                 </ul>
@@ -160,23 +233,35 @@
             </section>
         </section>
         <section>
+            <!--<section>-->
+            <!--<h2>Summary</h2>-->
+            <!--<ul>-->
+            <!--<li>Culture</li>-->
+            <!--<li>Constraints</li>-->
+            <!--<li>WIP</li>-->
+            <!--<li>Kata</li>-->
+            <!--<li>Repetition</li>-->
+            <!--<li>Automation</li>-->
+            <!--<li>Tools</li>-->
+            <!--<li>Technology</li>-->
+            <!--</ul>-->
+            <!--</section>-->
             <section>
-                <h2>Summary</h2>
-                <ul>
-                    <li>Culture</li>
-                    <li>Constraints</li>
-                    <li>WIP</li>
-                    <li>Kata</li>
-                    <li>Repetition</li>
-                    <li>Automation</li>
-                    <li>Tools</li>
-                    <li>Technology</li>
-                </ul>
-            </section>
-            <section>
-                <h2>If you have time to read 1 book, read "The Phoenix Project".</h2>
+                <h2>Recommended</h2>
+                <!-- Recommended. Recommendation. Encouraged. Recommended 1st read. Start with. -->
+                <img alt="The Phoenix Project. A Novel About IT, DevOps, and Helping Your Business Win"
+                     src="the-phoenix-project.jpg" width="334" height="499"/>
+                <aside class="notes">
+                    We are all busy, and have different interests and levels of experience. But if you have a little bit
+                    of time, I recommend to read "The Phoenix Project". It is non-technical, suited for all software
+                    professionals, and an easy and educational read. It is also a summary, and summarizes, of all other
+                    books.
+                </aside>
             </section>
         </section>
+        <!--<section>-->
+        <!--<img alt="moire" src="fresnel-moire-pattern-490x500.jpg" height=500 width=490 style="border: none"/>-->
+        <!--</section>-->
     </div>
 </div>
 
