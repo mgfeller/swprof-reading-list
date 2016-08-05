@@ -24,60 +24,38 @@
 <body>
 <div class="reveal">
     <div class="slides">
-        <section>
-            <h2>Books for the Well-Grounded Software Professional</h2>
+        <section id="title">
+            <h2>Books for the Successful Software Professional</h2>
             <hr/>
             <h4>Michael Gfeller</h4>
             <h4><a href="www.computas.com">Computas AS</a></h4>
             <h4><a href="www.mgfeller.net">www.mgfeller.net</a></h4>
+            <aside class="notes">
+                <ul>
+                    <li>Some books I found motivating and useful.</li>
+                    <li>Something for everybody</li>
+                    <li>Not very technical</li>
+                    <li>Starting with - what I think was the least technical - progressing towards more technical
+                        content.
+                    </li>
+                    <li>In the sequence I read them (almost).</li>
+                    <li>I picked one idea from each book I found noteworthy and remembered.</li>
+                </ul>
+            </aside>
         </section>
 
-        <section>
-            <section>
-                <h2>Context</h2>
-                <ul>
-                    <li class="fragment"><a href="https://jaxenter.de/tag/devopscon-2015">DevOpsCon 2015 München</a>
-                    </li>
-                    <li class="fragment"><a
-                            href="https://jaxenter.de/devops-eine-bestandsaufnahme-keynote-devopscon-2015-31054">DevOps
-                        State
-                        of the Union. John Willis (Docker Inc.)</a></li>
-                    <li class="fragment">CAMS: Culture, Automation, Measurement, Sharing</li>
-                    <!--<li>ICE: Inclusivity, Complexity, Empathy</li>-->
-                </ul>
-            </section>
-            <section>
-                <h2>Cybernetic Feedback Loop</h2>
-                <img alt="CAMS" src="cams.jpg" width="707" height="500"/>
-                <div align="right" style="font-size:60%"><a
-                        href="https://jaxenter.de/devops-eine-bestandsaufnahme-keynote-devopscon-2015-31054">DevOps
-                    State of the Union. John Willis (Docker Inc.)</a></div>
-                <aside class="notes">
-                    <ul>
-                        <li>If you don't have the C, don't bother with the AMS.</li>
-                        <li>All about feedback loops! CAMS.</li>
-                        <li>Conway's Law</li>
-                        <li>Somebody said at DevOpsCon 2015 in M: culture is not important, but cultural alignment is
-                            critical. Aesthetic alignment might be a better expression. Alignment can make organizations
-                            / teams rigid.
-                        </li>
-                        <li>Cybernetics is a transdisciplinary[1] approach for exploring regulatory systems, their
-                            structures, constraints, and possibilities. In the 21st century, the term is often used in a
-                            rather loose way to imply "control of any system using technology."
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>IT Novel</h2> <!-- Business Novel -->
+        <section id="phoenix">
+            <section id="phoenix-book">
+                <!--<h2>IT Novel</h2>--> <!-- Business Novel -->
                 <img alt="The Phoenix Project. A Novel About IT, DevOps, and Helping Your Business Win"
                      src="the-phoenix-project.jpg" width="334" height="499"/>
                 <aside class="notes">
                     <ul>
                         <li>A business novel.</li>
                         <li>Learning disguised as a novel, with a believable and almost catchy plot.</li>
+                        <li>About new business critical software, behind schedule, buggy, etc.</li>
+                        <li>About business culture that hurts, and is damaging for the company.</li>
+                        <li>Illustrates how one get out of this, without glorifying and simplifying too much.</li>
                         <li>
                             Learn how to recognize problems that happen in IT organizations; how these problems
                             jeopardize nearly every commitment the business makes in Development, IT Operations and
@@ -90,7 +68,7 @@
                     </ul>
                 </aside>
             </section>
-            <section>
+            <section id="phoenix-focus">
                 <ul>
                     <li>Analogy to manufacturing</li>
                     <li>Lean production</li>
@@ -121,7 +99,7 @@
                     </ul>
                 </aside>
             </section>
-            <section>
+            <section id="phoenix-3-ways">
                 <!-- Phoenix. p356-->
                 <h2>The Three Ways</h2>
                 <ul>
@@ -145,7 +123,193 @@
             </section>
 
         </section>
-        <section>
+        <section id="kanban">
+
+            <!-- personal kanban -->
+            <section id="personal-kanban-book">
+                <a href="http://www.personalkanban.com"><img alt="Personal Kanban. Mapping Work | Navigating Life"
+                                                             src="personal-kanban.jpg"
+                                                             width="375"
+                                                             height="499"/></a>
+                <blockquote>Personal work is <em>messy.</em></blockquote>
+                <!-- p9 -->
+                <aside class="notes">
+                    <ul>
+                        <li>Quote: "Personal Kanban is an information radiator for your work."</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section id="personal-kanban-4-steps">
+                <h2>Kanban in 4 Steps</h2>
+                <ol>
+                    <li>Establish value stream</li>
+                    <li>Populate backlog</li>
+                    <li>Limit work-in-progress</li>
+                    <li>Pull work</li>
+                </ol>
+                <aside class="notes">
+                    <ul>
+                        <li>Simple value stream: Ready - Doing - Done</li>
+                        <li>WIP Limit can be any low number you feel comfortable with, e.g. 3.</li>
+                        <li>Finding our priorities.</li>
+                        <li>SWB: subjective well-being (p118). Annotate finished task with an indicator for this.</li>
+                        <li>The Five Whys (p141). Find root cause, ask
+                            <emp>why?</emp>
+                            5 times.
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section id="personal-kanban-zeigarnik-effect">
+                <h2>Why Limit WIP?<br/>The Zeigarnik Effect</h2>
+                <!-- p33 in PK -->
+                <p>The adult's brain has a 90% chance of being preoccupied with unfinished business.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Remember interrupted or incomplete thoughts or actions over those that have been seen
+                            through to completion.
+                        </li>
+                        <li>Brain has a tendency to seek out patterns to process meaning, it becomes preoccupied with
+                            missing pieces of information.
+                        </li>
+                        <li>Decreases productivity and increases opportunity for error.</li>
+                        <li>p33 in PK</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section id="personal-kanban-2-takeaways">
+                <h2>Two takeaways</h2> <!-- p152 -->
+                <blockquote>Work unseen is work uncontrolled.</blockquote>
+                <blockquote>We can't (and shouldn't!) do more work than we can handle.</blockquote>
+                <p>Therefore:
+                <ul>
+                    <li>Visualize work</li>
+                    <li>Limit work-in-progress</li>
+                </ul>
+                </p>
+            </section>
+
+
+            <!-- Anderson Kanban-->
+
+            <section id="anderson-book">
+                <img alt="Kanban. Successful Evolutionary Change for Your Technology Business"
+                     src="kanban-anderson.jpg" width="405" height="500"/>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Some struggle with Scrum.</li>
+                    <li>First results for SW systems presented in 2007.</li> <!-- p7-->
+                    <li>Pull-system</li>
+                    <li>"In many ways, knowledge work is the antithesis of a repetitive production activity."</li>
+                    <li>A lot of theory behind Kanban, still evolving, and this book is (also) about the theory.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Complex Adaptive System for Lean</h2> <!-- p15 -->
+                <ol>
+                    <li>Visualize Workflow</li>
+                    <li>Limit Work-in-Progress</li>
+                    <li>Measure and Manage Flow</li>
+                    <li>Make Process Policies Explicit</li>
+                    <li>Use Models to Recognize Improvement Opportunities</li>
+                </ol>
+                <aside class="notes">
+                    Common <em>models</em> include: theory of constraints, system thinking, understanind variability (W.
+                    E. Deming), concept of waste (muda) from Toyota Production System.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Kanban as a Permission Giver</h2> <!-- p16 -->
+                <blockquote>Kanban is not a software development lifecycle methodology or an approach to project
+                    management. It requires that some process is already in place so that Kanban can be applied to
+                    incrementally change the underlying process.
+                </blockquote>
+            </section>
+
+            <section>
+                <h2>Delivery Cadence</h2>
+                <blockquote>Kanban dispenses with the time-boxed iteration and instead decouples the activities of
+                    prioritization, development and delivery.
+                </blockquote> <!-- p92 -->
+                <aside class="notes">
+                    <ul>
+                        <li>p92</li>
+                        <li>Kanban does not dispense with the notion of a regular cadence.</li>
+                        <li>Kanban avoids dysfunction introduced by artificially forcing things into time-boxes.
+                            Example: user story over 3 sprints: analysis and test planning, development, system testing
+                            and bug fixing.
+                        </li>
+                        <li>Kanban decouples the time it takes to create a user story from the delivery rate. While some
+                            work is complete and ready for delivery, some other work will be in progress.
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Metrics and Management Reporting</h2> <!-- p139 -->
+                <ul>
+                    <li>Tracking WIP</li>
+                    <li>Lead Time</li>
+                    <li>Due Date Performance</li>
+                    <li>Throughput</li>
+                    <li>Issues and Blocked Work Items</li>
+                    <li>Flow Efficiency</li>
+                    <li>Initial Quality</li>
+                    <li>Failure Load</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>p139</li>
+                        <li>Lead time: from order into production. Within target lead time? SLA.</li>
+                        <li>This is mainly for software maintenance: small system changes with rapid, frequent releases
+                            to production. But how do we Kanban on large projects, on development projects.
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>More to Think About</h2>
+                <ul>
+                    <li>Scaling Kanban - different sized items.</li> <!-- p149 -->
+                    <li>Operations review - overall state, and team present their metrics.</li> <!-- p159 -->
+                    <li>Starting a Kanban Change Initiative - mainly a cultural change. Optimize <em>existing</em>
+                        processes, change with minimal resistance.
+                    </li> <!-- p167 -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Three Types of Improvement Opportunity</h2> <!-- p187 -->
+                <ul>
+                    <li>Bottlenecks, ch17</li>
+                    <li>Waste (and its cost) Elimination, ch18</li>
+                    <li>Reduction of Variability, ch19</li>
+                </ul>
+                <aside class="notes">
+                    <p>Theory of constraints,
+                        <emp>The Goal</emp>
+                        , Eli Goldratt (1985)
+                    </p>
+                    <p>Five focusing steps:</p>
+                    <ol>
+                        <li>Identify the constraint</li>
+                        <li>Decide how to explot the constraint</li>
+                        <li>Subordinate everything else in the system to the decision made in step 2.</li>
+                        <li>Elevate the constraint</li>
+                        <li>Avoid intertia; identify the next constraint and return to step 2.</li>
+                    </ol>
+                </aside>
+            </section>
+
             <section>
                 <h2>Kanban</h2>
                 <ul>
@@ -161,6 +325,8 @@
                     </ul>
                 </aside>
             </section>
+
+            <!-- kanban other -->
             <section>
                 <h2>Kanban</h2>
                 <ul>
@@ -248,189 +414,29 @@
                     </ul>
                 </aside>
             </section>
-            <section>
-                <h2>Work-in-progress - Zeigarnik Effect</h2>
-                <!-- p33 in PK -->
-                <p>The adult's brain has a 90% chance of being preoccupied with unfinished business.</p>
-                <aside class="notes">
-                    <ul>
-                        <li>Remember interrupted or incomplete thoughts or actions over those that have been seen
-                            through to completion.
-                        </li>
-                        <li>Brain has a tendency to seek out patterns to process meaning, it becomes preoccupied with
-                            missing pieces of information.
-                        </li>
-                        <li>Decreases productivity and increases opportunity for error.</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <a href="http://www.personalkanban.com"><img alt="Personal Kanban. Mapping Work | Navigating Life"
-                                                             src="personal-kanban.jpg"
-                                                             width="375"
-                                                             height="499"/></a>
-                <blockquote>Personal work is <em>messy.</em></blockquote>
-                <!-- p9 -->
-                <aside class="notes">
-                    <ul>
-                        <li>Quote: "Personal Kanban is an information radiator for your work."</li>
-                        <li>Simple value stream: Ready - Doing - Done</li>
-                        <li>WIP Limit can be any low number you feel comfortable with, e.g. 3.</li>
-                        <li>Finding our priorities.</li>
-                        <li>SWB: subjective well-being (p118). Annotate finished task with an indicator for this.</li>
-                        <li>The Five Whys (p141). Find root cause, ask
-                            <emp>why?</emp>
-                            5 times.
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>Kanban in 4 Steps</h2>
-                <ol>
-                    <li>Establish value stream</li>
-                    <li>Populate backlog</li>
-                    <li>Limit work-in-progress</li>
-                    <li>Pull work</li>
-                </ol>
-            </section>
-            <section><h2>Two takeaways</h2> <!-- p152 -->
-                <blockquote>Work unseen is work uncontrolled.</blockquote>
-                <blockquote>We can't (and shouldn't!) do more work than we can handle.</blockquote>
-                <p>Therefore:
-                <ul>
-                    <li>Visualize work</li>
-                    <li>Limit work-in-progress</li>
-                </ul>
-                </p>
-            </section>
-            <section>
-                <img alt="Kanban. Successful Evolutionary Change for Your Technology Business"
-                     src="kanban-anderson.jpg" width="405" height="500"/>
-            </section>
-            <section>
-                <ul>
-                    <li>Some struggle with Scrum.</li>
-                    <li>First results for SW systems presented in 2007.</li> <!-- p7-->
-                    <li>Pull-system</li>
-                    <li>"In many ways, knowledge work is the antithesis of a repetitive production activity."</li>
-                    <li>A lot of theory behind Kanban, still evolving, and this book is (also) about the theory.</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Complex Adaptive System for Lean</h2> <!-- p15 -->
-                <ol>
-                    <li>Visualize Workflow</li>
-                    <li>Limit Work-in-Progress</li>
-                    <li>Measure and Manage Flow</li>
-                    <li>Make Process Policies Explicit</li>
-                    <li>Use Models to Recognize Improvement Opportunities</li>
-                </ol>
-                <aside class="notes">
-                    Common <em>models</em> include: theory of constraints, system thinking, understanind variability (W.
-                    E. Deming), concept of waste (muda) from Toyota Production System.
-                </aside>
-            </section>
-            <section>
-                <h2>Kanban as a Permission Giver</h2> <!-- p16 -->
-                <blockquote>Kanban is not a software development lifecycle methodology or an approach to project
-                    management. It requires that some process is already in place so that Kanban can be applied to
-                    incrementally change the underlying process.
-                </blockquote>
-            </section>
-            <section>
-                <h2>Delivery Cadence</h2>
-                <blockquote>Kanban dispenses with the time-boxed iteration and instead decouples the activities of
-                    prioritization, development and delivery.
-                </blockquote> <!-- p92 -->
-                <aside class="notes">
-                    <ul>
-                        <li>p92</li>
-                        <li>Kanban does not dispense with the notion of a regular cadence.</li>
-                        <li>Kanban avoids dysfunction introduced by artificially forcing things into time-boxes.
-                            Example: user story over 3 sprints: analysis and test planning, development, system testing
-                            and bug fixing.
-                        </li>
-                        <li>Kanban decouples the time it takes to create a user story from the delivery rate. While some
-                            work is complete and ready for delivery, some other work will be in progress.
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>Metrics and Management Reporting</h2> <!-- p139 -->
-                <ul>
-                    <li>Tracking WIP</li>
-                    <li>Lead Time</li>
-                    <li>Due Date Performance</li>
-                    <li>Throughput</li>
-                    <li>Issues and Blocked Work Items</li>
-                    <li>Flow Efficiency</li>
-                    <li>Initial Quality</li>
-                    <li>Failure Load</li>
-                </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>p139</li>
-                        <li>Lead time: from order into production. Within target lead time? SLA.</li>
-                        <li>This is mainly for software maintenance: small system changes with rapid, frequent releases
-                            to production. But how do we Kanban on large projects, on development projects.
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-                <h2>More to Think About</h2>
-                <ul>
-                    <li>Scaling Kanban - different sized items.</li> <!-- p149 -->
-                    <li>Operations review - overall state, and team present their metrics.</li> <!-- p159 -->
-                    <li>Starting a Kanban Change Initiative - mainly a cultural change. Optimize <em>existing</em>
-                        processes, change with minimal resistance.
-                    </li> <!-- p167 -->
-                </ul>
-            </section>
-            <section>
-                <h2>Three Types of Improvement Opportunity</h2> <!-- p187 -->
-                <ul>
-                    <li>Bottlenecks, ch17</li>
-                    <li>Waste (and its cost) Elimination, ch18</li>
-                    <li>Reduction of Variability, ch19</li>
-                </ul>
-                <aside class="notes">
-                    <p>Theory of constraints,
-                        <emp>The Goal</emp>
-                        , Eli Goldratt (1985)
-                    </p>
-                    <p>Five focusing steps:</p>
-                    <ol>
-                        <li>Identify the constraint</li>
-                        <li>Decide how to explot the constraint</li>
-                        <li>Subordinate everything else in the system to the decision made in step 2.</li>
-                        <li>Elevate the constraint</li>
-                        <li>Avoid intertia; identify the next constraint and return to step 2.</li>
-                    </ol>
-                </aside>
-            </section>
         </section>
-        <section>
-            <section>
-                <h2>Kata</h2>
+
+        <!-- Kata -->
+        <section id="kata">
+            <section id="toyota-kata-book">
+                <img alt="Toyota Kata" src="toyota-kata.jpg" width="338" height="499"/>
+            </section>
+            <section id="kendo-kata">
+                <!--                <h2>Kata</h2>-->
                 <img alt="Kendo Kata" src="kendo-kata-512x322.jpg" height="322" width="512"/>
                 <p>"Kendo Kata are fixed patterns that teach kendoka (kendo practitioners) the basic elements of
                     swordsmanship. There are two roles, uchidachi (打太刀), the teacher, and shidachi (仕太刀), the student."
                     (<a href="https://en.wikipedia.org/wiki/Kendo_Kata">Wikipedia</a>)</p>
             </section>
-            <section>
-                <img alt="Toyota Kata" src="toyota-kata.jpg" width="338" height="499"/>
-            </section>
-            <section>
+            <section id="toyota-kata-2-katas">
                 <h2>2 Katas</h2>
                 <ul>
                     <li>Improvement Kata</li>
                     <li>Coaching Kata</li>
                 </ul>
             </section>
-            <section>
+
+            <section id="toyota-kata-improvement-kata">
                 <h2>Improvement Kata</h2>
                 <ul>
                     <li><em>"kaizen"</em> = "improvement"</li>
@@ -455,11 +461,13 @@
                     </ul>
                 </aside>
             </section>
-            <section>
+
+            <section id="toyota-kata-improvement-kata-pdca">
                 <h2>Improvement Kata</h2>
                 <img src="pdca.jpg" alt="Plan-Do-Check-Act" width="707" height="500">
             </section>
-            <section>
+
+            <section id="toyota-kata-improvement-kata-5-questions">
                 <h2>Improvement Kata: 5 Questions</h2> <!-- Toyota Kata, p155-->
                 <ol>
                     <li>What is the target condition? <em>(The challenge)</em></li>
@@ -471,19 +479,20 @@
                     <li>When can we go and see what we have learned from taking that step?</li>
                 </ol>
             </section>
-            <section>
+
+            <section id="toyota-kata-coaching-kata">
                 <h2>Coaching Kata</h2>
                 <ul>
                     <li>Leaders as teachers</li>
                     <li>Focused dialogue</li>
-                    <li>Leading by questioning. Do not provide the answers - it is also OK not to have the answer!</li>
-                    <li>Leading softly</li>
-                    <li>
-                        <blockquote>If the learner hasn't learned, the teacher hasn't taught.</blockquote>
-                    </li>
+                    <li>Teaching by questioning</li>
+                    <li>Do not provide the answers</li>
+                    <li>It is OK not to have the answer</li>
                 </ul>
+                <blockquote>If the learner hasn't learned, the teacher hasn't taught.</blockquote>
             </section>
-            <section>
+
+            <section id="toyota-kata-coaching-kata-focus">
                 <h2>Focus On Process Instead of Blame</h2> <!-- Kata, p141 -->
                 <blockquote>"It's always the system's fault, never a person 's. No blaming culture."</blockquote>
                 <aside class="notes">
@@ -500,8 +509,16 @@
                 </ul>
             </aside>
         </section>
-        <section>
-            <section>
+
+        <!-- Continuous -->
+        <section id="continuous">
+
+            <section id="continuous-book-humble-farley">
+                <img alt="Continuous Delivery. Reliable Software Releases Through Build, Test, and Deployment Automation"
+                     src="cd-humble-farley-379x500.jpg" width="379" height="500"/>
+            </section>
+
+            <section id="continuous-overview">
                 <h2>Continuous ...</h2>
                 <ul>
                     <li class="fragment"><strong>Integration</strong>
@@ -525,12 +542,9 @@
                     </li>
                 </ul>
             </section>
-            <section>
-                <h2>The Bible</h2>
-                <img alt="Continuous Delivery. Reliable Software Releases Through Build, Test, and Deployment Automation"
-                     src="cd-humble-farley-379x500.jpg" width="379" height="500"/>
-            </section>
-            <section>
+
+
+            <section id="continuous-pipeline">
                 <h2>Pipeline</h2>
                 <img alt="A pipeline" src="pipeline.jpg" width="707" height="500"/>
                 <aside class="notes">
@@ -541,8 +555,8 @@
                     </ul>
                 </aside>
             </section>
-            <section>
-                <h2>The Classic</h2>
+
+            <section id="continuous-book-releasit">
                 <img alt="Release It! Design and Deploy Production-Ready Software" src="release-it-417x500.jpg"
                      width="417" height="500"/>
                 <aside class="notes">
@@ -551,21 +565,29 @@
                     </ul>
                 </aside>
             </section>
-            <section>
+
+            <section id="continuous-book-xebialab">
                 <h2>For the Manager</h2>
                 <img src="managers-guide-to-cd-319x500.jpg" width="319" height="500"/>
             </section>
+
         </section>
-        <section>
-            <section>
+
+        <!-- more books... -->
+        <section id="more">
+            <section id="more-books">
                 <h2>More...</h2>
-                <img src="building-microservices-276x350.jpg" width="267" height="350">
-                <img src="ddd-quickly-246x350.jpg" width="246" height="350">
-                <img src="ddd-evans-264x350.jpg" width="264" height="350">
+                <img src="building-microservices-276x350.jpg" width="267" height="350"/>
+                <img src="ddd-distilled-264x350.jpg" width="264" height="350"/>
+                <!--
+                                <img src="ddd-quickly-246x350.jpg" width="246" height="350"/>
+                                <img src="ddd-evans-264x350.jpg" width="264" height="350"/>
+                -->
             </section>
         </section>
-        <section>
-            <section>
+
+        <section id="recommended">
+            <section id="recommended-book">
                 <h2>Recommended</h2>
                 <!-- Recommended. Recommendation. Encouraged. Recommended 1st read. Start with. -->
                 <img alt="The Phoenix Project. A Novel About IT, DevOps, and Helping Your Business Win"
@@ -578,6 +600,45 @@
                 </aside>
             </section>
         </section>
+
+        <section id="summary">
+            <!--            <section>
+                            <h2>Context</h2>
+                            <ul>
+                                <li class="fragment"><a href="https://jaxenter.de/tag/devopscon-2015">DevOpsCon 2015 München</a>
+                                </li>
+                                <li class="fragment"><a
+                                        href="https://jaxenter.de/devops-eine-bestandsaufnahme-keynote-devopscon-2015-31054">DevOps
+                                    State
+                                    of the Union. John Willis (Docker Inc.)</a></li>
+                                <li class="fragment">CAMS: Culture, Automation, Measurement, Sharing</li>
+                                &lt;!&ndash;<li>ICE: Inclusivity, Complexity, Empathy</li>&ndash;&gt;
+                            </ul>
+                        </section>-->
+            <section id="summary-cams">
+                <h2>By Way of Summary:<br/>Cybernetic Feedback Loop</h2>
+                <img alt="CAMS" src="cams.jpg" width="707" height="500"/>
+                <div align="right" style="font-size:60%"><a
+                        href="https://jaxenter.de/devops-eine-bestandsaufnahme-keynote-devopscon-2015-31054">DevOps
+                    State of the Union. John Willis (Docker Inc.)</a></div>
+                <aside class="notes">
+                    <ul>
+                        <li>If you don't have the C, don't bother with the AMS.</li>
+                        <li>All about feedback loops! CAMS.</li>
+                        <li>Conway's Law</li>
+                        <li>Somebody said at DevOpsCon 2015 in M: culture is not important, but cultural alignment is
+                            critical. Aesthetic alignment might be a better expression. Alignment can make organizations
+                            / teams rigid.
+                        </li>
+                        <li>Cybernetics is a transdisciplinary[1] approach for exploring regulatory systems, their
+                            structures, constraints, and possibilities. In the 21st century, the term is often used in a
+                            rather loose way to imply "control of any system using technology."
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+
         <!--<section>-->
         <!--<img alt="moire" src="fresnel-moire-pattern-490x500.jpg" height=500 width=490 style="border: none"/>-->
         <!--</section>-->
@@ -588,7 +649,21 @@
 <script src="js/reveal.js"></script>
 
 <script>
+
+    function hide(nodeId) {
+        var n = document.getElementById(nodeId);
+        var p = n.parentNode;
+        p.removeChild(n);
+    }
+
+    hide("personal-kanban-2-takeaways");
+    hide("toyota-kata-improvement-kata");
+    hide("toyota-kata-coaching-kata-focus");
+    hide("continuous-book-xebialab");
+    hide("toyota-kata-improvement-kata-5-questions");
+
     // More info https://github.com/hakimel/reveal.js#configuration
+
     Reveal.initialize({
         history: true,
 
@@ -604,6 +679,7 @@
             }
         ]
     });
+    document.getElementById("personal-kanban-book").style.display = "none";
 </script>
 </body>
 </html>
