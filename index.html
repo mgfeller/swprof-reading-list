@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Books for the Well-Grounded Software Professional</title>
+    <title>Books for the Successful Software Professional</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -28,8 +28,8 @@
             <h2>Books for the Successful Software Professional</h2>
             <hr/>
             <h4>Michael Gfeller</h4>
-            <h4><a href="www.computas.com">Computas AS</a></h4>
-            <h4><a href="www.mgfeller.net">www.mgfeller.net</a></h4>
+            <h4><a href="http://www.computas.com">Computas AS</a></h4>
+            <h4><a href="http://www.mgfeller.net">www.mgfeller.net</a></h4>
             <aside class="notes">
                 <ul>
                     <li>Some books I found motivating and useful.</li>
@@ -195,22 +195,32 @@
 
             <!-- Anderson Kanban-->
 
-            <section id="anderson-book">
+            <section id="anderson-kanban-book">
                 <img alt="Kanban. Successful Evolutionary Change for Your Technology Business"
                      src="kanban-anderson.jpg" width="405" height="500"/>
             </section>
 
-            <section>
+            <section id="anderson-kanban-points-01">
                 <ul>
                     <li>Some struggle with Scrum.</li>
                     <li>First results for SW systems presented in 2007.</li> <!-- p7-->
                     <li>Pull-system</li>
                     <li>"In many ways, knowledge work is the antithesis of a repetitive production activity."</li>
                     <li>A lot of theory behind Kanban, still evolving, and this book is (also) about the theory.</li>
+                    <li>"kanban" means "signal card".</li> <!-- Anderson p13 -->
+                    <li>In software development, signal cards represent work items.</li>
                 </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Anderson, p13</li>
+                        <li>a Japanese manufacturing system in which the supply of components is regulated through the
+                            use of an instruction card sent along the production line.
+                        </li>
+                    </ul>
+                </aside>
             </section>
 
-            <section>
+            <section id="anderson-kanban-complex-adaptive-system-for-lean">
                 <h2>Complex Adaptive System for Lean</h2> <!-- p15 -->
                 <ol>
                     <li>Visualize Workflow</li>
@@ -220,21 +230,22 @@
                     <li>Use Models to Recognize Improvement Opportunities</li>
                 </ol>
                 <aside class="notes">
-                    Common <em>models</em> include: theory of constraints, system thinking, understanind variability (W.
+                    Common <em>models</em> include: theory of constraints, system thinking, understanding variability
+                    (W.
                     E. Deming), concept of waste (muda) from Toyota Production System.
                 </aside>
             </section>
 
-            <section>
-                <h2>Kanban as a Permission Giver</h2> <!-- p16 -->
+            <section id="anderson-kanban-quote-k-as-permission-giver">
+                <!--<h2>Kanban as a Permission Giver</h2>--> <!-- p16 -->
                 <blockquote>Kanban is not a software development lifecycle methodology or an approach to project
                     management. It requires that some process is already in place so that Kanban can be applied to
                     incrementally change the underlying process.
                 </blockquote>
             </section>
 
-            <section>
-                <h2>Delivery Cadence</h2>
+            <section if="anderson-kanban-quote-k-delivery-cadence">
+                <!--<h2>Delivery Cadence</h2>-->
                 <blockquote>Kanban dispenses with the time-boxed iteration and instead decouples the activities of
                     prioritization, development and delivery.
                 </blockquote> <!-- p92 -->
@@ -253,7 +264,7 @@
                 </aside>
             </section>
 
-            <section>
+            <section id="anderson-kanban-metrics-and-management-reporting">
                 <h2>Metrics and Management Reporting</h2> <!-- p139 -->
                 <ul>
                     <li>Tracking WIP</li>
@@ -276,7 +287,7 @@
                 </aside>
             </section>
 
-            <section>
+            <section id="anderson-kanban-more-to-think-about">
                 <h2>More to Think About</h2>
                 <ul>
                     <li>Scaling Kanban - different sized items.</li> <!-- p149 -->
@@ -287,7 +298,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="anderson-kanban-3-types-of-improvement-opportunity">
                 <h2>Three Types of Improvement Opportunity</h2> <!-- p187 -->
                 <ul>
                     <li>Bottlenecks, ch17</li>
@@ -310,24 +321,8 @@
                 </aside>
             </section>
 
-            <section>
-                <h2>Kanban</h2>
-                <ul>
-                    <li>"kanban" means "signal card"</li> <!-- Anderson p13 -->
-                    <li>in software development, they represent work items</li>
-                </ul>
-                <aside class="notes">
-                    <ul>
-                        <li>Anderson, p13</li>
-                        <li>a Japanese manufacturing system in which the supply of components is regulated through the
-                            use of an instruction card sent along the production line.
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-
             <!-- kanban other -->
-            <section>
+            <section id="kanban-other-what-is-kanban">
                 <h2>Kanban</h2>
                 <ul>
                     <li>Visualize Work</li> <!-- https://leankit.com/learn/kanban/what-is-kanban/ -->
@@ -344,11 +339,12 @@
                     </ul>
                 </aside>
             </section>
-            <section>
+
+            <section id="kanban-other-kanban-and-scrum">
                 <h2>Kanban and Scrum</h2> <!-- https://leankit.com/learn/kanban/scrum-kanban/ -->
                 <ul>
                     <li>Kanban is not Scrum, though they are both work methods.</li>
-                    <li>Scrum and Kanban can be combined (mainly use Kanban to visualize workflow?)</li>
+                    <li>Scrum and Kanban can be combined.</li>
                     <li>3 chunks of differences:
                         <ul>
                             <li>Scheduling, iteration, and cadence. Kanban, there are no required time boxes or
@@ -379,7 +375,8 @@
                     </ul>
                 </aside>
             </section>
-            <section>
+
+            <section id="kanban-other-more-points">
                 <h2>Kanban</h2>
                 <ul>
                     <li>Visualize work</li>
@@ -429,11 +426,13 @@
                     (<a href="https://en.wikipedia.org/wiki/Kendo_Kata">Wikipedia</a>)</p>
             </section>
             <section id="toyota-kata-2-katas">
-                <h2>2 Katas</h2>
-                <ul>
-                    <li>Improvement Kata</li>
-                    <li>Coaching Kata</li>
-                </ul>
+                <h1>2 Katas</h1>
+                <!--
+                                <ul>
+                                    <li>Improvement Kata</li>
+                                    <li>Coaching Kata</li>
+                                </ul>
+                -->
             </section>
 
             <section id="toyota-kata-improvement-kata">
@@ -574,31 +573,27 @@
         </section>
 
         <!-- more books... -->
-        <section id="more">
-            <section id="more-books">
-                <h2>More...</h2>
-                <img src="building-microservices-276x350.jpg" width="267" height="350"/>
-                <img src="ddd-distilled-264x350.jpg" width="264" height="350"/>
-                <!--
-                                <img src="ddd-quickly-246x350.jpg" width="246" height="350"/>
-                                <img src="ddd-evans-264x350.jpg" width="264" height="350"/>
-                -->
-            </section>
+        <section id="more-books">
+            <h2>More...</h2>
+            <img src="building-microservices-276x350.jpg" width="267" height="350"/>
+            <img src="ddd-distilled-264x350.jpg" width="264" height="350"/>
+            <!--
+                            <img src="ddd-quickly-246x350.jpg" width="246" height="350"/>
+                            <img src="ddd-evans-264x350.jpg" width="264" height="350"/>
+            -->
         </section>
 
-        <section id="recommended">
-            <section id="recommended-book">
-                <h2>Recommended</h2>
-                <!-- Recommended. Recommendation. Encouraged. Recommended 1st read. Start with. -->
-                <img alt="The Phoenix Project. A Novel About IT, DevOps, and Helping Your Business Win"
-                     src="the-phoenix-project.jpg" width="334" height="499"/>
-                <aside class="notes">
-                    We are all busy, and have different interests and levels of experience. But if you have a little bit
-                    of time, I recommend to read "The Phoenix Project". It is non-technical, suited for all software
-                    professionals, and an easy and educational read. It is also a summary, and summarizes, of all other
-                    books.
-                </aside>
-            </section>
+        <section id="recommended-book">
+            <h2>Recommended</h2>
+            <!-- Recommended. Recommendation. Encouraged. Recommended 1st read. Start with. -->
+            <img alt="The Phoenix Project. A Novel About IT, DevOps, and Helping Your Business Win"
+                 src="the-phoenix-project.jpg" width="334" height="499"/>
+            <aside class="notes">
+                We are all busy, and have different interests and levels of experience. But if you have a little bit
+                of time, I recommend to read "The Phoenix Project". It is non-technical, suited for all software
+                professionals, and an easy and educational read. It is also a summary, and summarizes, of all other
+                books.
+            </aside>
         </section>
 
         <section id="summary">
@@ -638,6 +633,14 @@
                 </aside>
             </section>
         </section>
+        <section id="thank-you">
+            <!--<section data-background-image="fresnel-moire-pattern-490x500.jpg" data-background-size="490px" data-background-position="top right">-->
+            <h2>Thank You for Your Attention!</h2>
+            <hr/>
+            <h4>Michael Gfeller</h4>
+            <h4><a href="http://www.computas.com">Computas AS</a></h4>
+            <h4><a href="http://www.mgfeller.net">www.mgfeller.net</a></h4>
+        </section>
 
         <!--<section>-->
         <!--<img alt="moire" src="fresnel-moire-pattern-490x500.jpg" height=500 width=490 style="border: none"/>-->
@@ -656,11 +659,22 @@
         p.removeChild(n);
     }
 
+    hide("phoenix-focus");
     hide("personal-kanban-2-takeaways");
     hide("toyota-kata-improvement-kata");
     hide("toyota-kata-coaching-kata-focus");
     hide("continuous-book-xebialab");
     hide("toyota-kata-improvement-kata-5-questions");
+    hide("anderson-kanban-points-01");
+    hide("anderson-kanban-complex-adaptive-system-for-lean");
+    hide("anderson-kanban-metrics-and-management-reporting");
+    hide("anderson-kanban-more-to-think-about");
+    hide("anderson-kanban-3-types-of-improvement-opportunity");
+    hide("kanban-other-what-is-kanban");
+    hide("kanban-other-kanban-and-scrum");
+    hide("kanban-other-more-points");
+    hide("more-books");
+    hide("recommended-book");
 
     // More info https://github.com/hakimel/reveal.js#configuration
 
